@@ -25,3 +25,12 @@ graph_builder.add_edge(START, "chatbot")
 graph_builder.add_edge("chatbot", END)
 
 graph = graph_builder.compile(checkpointer=MemorySaver())
+
+
+import os
+
+png_graph = graph.get_graph().draw_mermaid_png()
+with open("graph.png", "wb") as f:
+    f.write(png_graph)
+
+print(f"Graph saved as 'graph.png' in {os.getcwd()}")

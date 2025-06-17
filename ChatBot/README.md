@@ -4,7 +4,12 @@ Reference: [Deploying LangGraph with FastAPI: A Step-by-Step Tutorial](https://m
 
 Components:
  * source code for HTML / Chatbot (python, langchain / langgraph)
- * Docker file to build / run docker
+ * Docker file to build / run docker   
+
+
+
+
+![Graph PNG](./graph.png)
 
 ## Get source code
 ```
@@ -16,13 +21,15 @@ cd AIAgentTutorial/ChatBot
 
 Build your docker image.
 ```
-docker build -t akashatek/chatbot:1.02 .
-docker push akashatek/chatbot:1.02
+docker build -t akashatek/chatbot:1.04 .
+docker push akashatek/chatbot:1.04
 ```
+
+Update your environement variable *export GOOGLE_API_KEY="..."*
 
 Run your docker container.
 ```
-docker run -d -e GROQ_API_KEY="..." --name chatbot -p 8000:8000 akashatek/chatbot:1.02
+docker run -d -e GOOGLE_API_KEY --name chatbot -p 8000:8000 akashatek/chatbot:1.04
 ```
 Reach out to your web browser: [http://localhost:8000/](http://localhost:8000/)
 
@@ -35,8 +42,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Copy *.env-example* file into *.env* file.    
-Update the GROQ_API_KEY="..." environment variable.
+Update your environement variable *export GOOGLE_API_KEY="..."*
 
 Run the local web server.
 ```
