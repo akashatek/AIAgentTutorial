@@ -17,9 +17,6 @@ import getpass
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
-# os.environ["OPENAI_API_KEY"] = "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"
-
 load_dotenv()
 if "GOOGLE_API_KEY" not in os.environ:
     os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter your Google AI API key: ")
