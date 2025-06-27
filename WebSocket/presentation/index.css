@@ -1,97 +1,98 @@
 body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: #f0f2f5;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .chat-container {
-            width: 100%;
-            max-width: 600px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            max-height: 90vh; /* Adjust as needed */
-        }
-        .chat-header {
-            background-color: #007bff;
-            color: white;
-            padding: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: center;
-            border-bottom: 1px solid #0056b3;
-        }
-        #messages {
-            flex-grow: 1;
-            padding: 15px;
-            overflow-y: auto;
-            list-style: none;
-            margin: 0;
-            background-color: #e9ecef;
-            border-top: 1px solid #dee2e6;
-            border-bottom: 1px solid #dee2e6;
-        }
-        #messages li {
-            padding: 10px 12px;
-            margin-bottom: 8px;
-            border-radius: 8px;
-            max-width: 80%;
-            word-wrap: break-word;
-            line-height: 1.4;
-            display: block; /* Ensure li elements take full width for alignment */
-        }
-        #messages li.user-message {
-            background-color: #d1e7dd; /* Light green for user */
-            margin-left: auto; /* Push to right */
-            text-align: right;
-        }
-        #messages li.bot-message {
-            background-color: #cfe2ff; /* Light blue for bot */
-            margin-right: auto; /* Push to left */
-            text-align: left;
-        }
-        .message-form {
-            display: flex;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-top: 1px solid #e2e6ea;
-        }
-        .message-form input[type="text"] {
-            flex-grow: 1;
-            padding: 10px 15px;
-            border: 1px solid #ced4da;
-            border-radius: 20px;
-            font-size: 1em;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .message-form input[type="text"]:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        }
-        .message-form button {
-            background-color: #28a745; /* Green send button */
-            color: white;
-            border: none;
-            border-radius: 20px;
-            padding: 10px 20px;
-            margin-left: 10px;
-            cursor: pointer;
-            font-size: 1em;
-            transition: background-color 0.2s ease-in-out;
-            outline: none;
-        }
-        .message-form button:hover {
-            background-color: #218838;
-        }
-        .message-form button:active {
-            background-color: #1e7e34;
-        }
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-height: 90vh; /* Adjust as needed */
+}
+.chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #0056b3;
+}
+#messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    list-style: none;
+    margin: 0;
+    background-color: #e9ecef;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+#messages li {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+    line-height: 1.4;
+    display: block; /* Ensure li elements take full width for alignment */
+}
+#messages li.user-message {
+    background-color: #d1e7dd; /* Light green for user */
+    margin-left: auto; /* Push to right */
+    text-align: right;
+}
+#messages li.bot-message {
+    background-color: #cfe2ff; /* Light blue for bot */
+    margin-right: auto; /* Push to left */
+    text-align: left;
+}
+.message-form {
+    display: flex;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e2e6ea;
+}
+.message-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.message-form input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.message-form button {
+    background-color: #28a745; /* Green send button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease-in-out;
+    outline: none;
+}
+.message-form button:hover {
+    background-color: #218838;
+}
+.message-form button:active {
+    background-color: #1e7e34;
+}
