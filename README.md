@@ -3,6 +3,7 @@
 Examples:
  * [Chatbot](./ChatBot/README.md), connects Google LLM with a min Web Interface.
  * [DynamicOrderManagementSystem](./DynamicOrderManagementSystem/README.md), connects Google LLM with query to SQL  Database. 
+ * [SQL Agent](./SQLAgent/README.md), connects Re-Act Agent to a PostGres SQL Database.
  * [WebSocket](./WebSocket/README.md), connects Web HTML / Javascript to Python Websocket
 
 ## LangGraph Agent Architecture
